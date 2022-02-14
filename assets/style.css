@@ -1,0 +1,153 @@
+/* page stylings */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* root variable */
+:root {
+    --monaco-font: monaco;
+    --blue: #316e78; 
+}
+/* background color */
+body {
+    background-color: #BEBEBE;
+}
+/* Gustavo Davila header */
+h1 {
+    text-align: center;
+    font-family: var(--monaco-font);
+    font-size: 75px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: blanchedalmond;
+    padding-bottom: 40px;
+}
+/* Horiseon and Run Buddy link image */
+img {
+    width: 260px;
+    height: 300px;
+}
+/* nav links */
+.nav-links {
+    display: flex;
+    font-family: var(--monaco-font);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: blanchedalmond;
+    justify-content: center;
+    flex-direction: row;
+}
+h2 {
+    display: inline;
+    padding-top: 40px;
+}
+.nav-block {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+/* styling for headings */
+.headings {
+    display: flex;
+    font-family: var(--monaco-font);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: blanchedalmond;
+    right: 100px;
+    padding-left: 40px;
+    border: black 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* about me and contact text */
+h3 {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-family: var(--monaco-font);
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* about me and work container */
+.container {
+    background-color: var(--blue);
+    height: 200px;
+}
+/* horiseon work container */
+.horiseon {
+}
+/* styles for horiseon text class */
+.horiseon-text {
+    font-family: var(--monaco-font);
+    color: var(--blue);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+/* run buddy work container */
+.run-buddy {
+    object-fit: contain;
+}
+/* work content container */
+.work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+/* styles for run buddy text class */
+.run-buddy-text {
+    font-family: var(--monaco-font);
+    color: var(--blue);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+.calculator-text {
+    font-family: var(--monaco-font);
+    color: var(--blue);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+.led-wall-text {
+    font-family: var(--monaco-font);
+    color: var(--blue);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+.surf-text {
+    font-family: var(--monaco-font);
+    color: var(--blue);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+/* media query for mobile screen use */
+@media screen and (max-width: 600px) {
+    section {
+     overflow: auto;
+    }
+    .container {
+     margin-top: 40px;
+     text-align: center;
+    }
+    .headings {
+     text-align: left;
+     padding: 20px;
+    }
+    h3 {
+        font-size: large;
+    }
+    .container {
+        background-color: var(--blue);
+        height: 200px;
+    }
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        object-fit: contain;
+        padding-top: 20px;
+    }
+    img {
+        width: 260px;
+        height: 300px;
+    }
+}
